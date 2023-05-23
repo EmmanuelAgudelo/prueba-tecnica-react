@@ -43,14 +43,21 @@ const Sidebar = () => {
                         <span>Aliados Revu</span>
                     </div>
                 </NavLink>
-                {/* <div className="sidebar_link">
-                    <BiStar className="sidebar_icon" />
-                    <NavLink onClick={() => setUrl(useLocation)}} to="/rating"><span>Calificacione</span></NavLink>
-                </div>
-                <div className="sidebar_link">
-                    <BiMessage className="sidebar_icon" />
-                    <NavLink onClick={() => setUrl(useLocation)}} to="/aliados"><span>Mensajes</span></NavLink>
-                </div> */}
+
+                <NavLink to="/calificaciones" state={'Calificaciones'}>
+                    <div className="sidebar_link">
+                        <BiStar className="sidebar_icon" />
+                        <span>Calificaciones</span>
+                    </div>
+                </NavLink>
+
+                <NavLink to="/mensajes" state={'Mensajes'}>
+                    <div className="sidebar_link">
+                        <BiMessage className="sidebar_icon" />
+                        <span>Mensajes</span>
+                    </div>
+                </NavLink>
+                
 
             </div>
 

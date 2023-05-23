@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { route } from "../../store/store";
 import { useEffect } from "react";
 
-const Home = () => {
+const Ratings = () => {
 
     const { setUrl } = route();
 
@@ -18,4 +18,4 @@ const Home = () => {
      );
 }
  
-export default Home;
+export default Ratings;

@@ -22,7 +22,7 @@ const Header = () => {
             <div className="header">
                 <div className="header_title">
                     <BiBuildings className="header_icon" />
-                    <h4>{url}</h4>
+                    <h4>{url ?? 'Inicio'}</h4>
                 </div>
                 <div className="header_role">
                     <h4>Administrador</h4>
