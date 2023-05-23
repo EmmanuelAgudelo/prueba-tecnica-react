@@ -1,0 +1,88 @@
+$main: #22b6a8;
+$main-dark: #1b8881;
+$dark: #000000;
+$btn: #f8a100;
+
+$grid: (
+    col-qty: 12,
+    normal: (gutter: 20px,
+        width: 60px),
+    large: (gutter: 30px,
+        width: 70px)
+);
+
+@mixin btn {
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    padding: 6px 40px;
+    cursor: pointer;
+}
+
+
+@mixin grid($cols , $space) {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: $space;
+
+    @media screen and (max-width:1024px) {
+        grid-template-columns: 1fr;
+        gap: 0em;
+    }
+}
+
+@mixin gridRepeat($cols , $space) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+
+    @media screen and (max-width:1024px) {
+        grid-template-columns: repeat(2 1fr);
+        gap: 1em;
+        transition: all .3s ease;
+
+    }
+
+    @media screen and (max-width:640px) {
+        grid-template-columns: 1fr;
+        transition: width .3s ease;
+
+    }
+}
+
+@mixin sidebarCollapse() {
+    @media screen and (max-width: 1024px) {
+        display: none;
+        position: relative;
+    }
+}
+
+@mixin input($width) {
+    font-size: 12px;
+    width: $width;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+@mixin box() {
+    width: 80%;
+    background: #fff;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+
+    @media screen and (max-width:1024px) {
+        width: 90%;
+        transition: width .3s ease;
+    }
+
+    @media screen and (max-width:640px) {
+        width: 75%;
+        transition: width .3s ease;
+    }
+}

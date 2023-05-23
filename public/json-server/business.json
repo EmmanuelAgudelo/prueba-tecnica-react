@@ -1,0 +1,20 @@
+{
+    "business": {
+        "category": "Comidas",
+        "city": "Bogotá",
+        "department": "Cundinamarca",
+        "address": "Cra. 45 #8-24",
+        "phoneNumber": 3152423324,
+        "active": false,
+        "branches": [
+            {
+                "nombre": "Sede 1",
+                "address": "Cra. 76 #6-85"
+            },
+            {
+                "nombre": "Sede 2",
+                "address": "Cra. 59 #4-94"
+            }
+        ]
+    }
+}
