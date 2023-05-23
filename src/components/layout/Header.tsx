@@ -1,6 +1,5 @@
 import { BiBuildings, BiMenu } from "react-icons/bi";
 import { route, sidebarCollapse } from "./../../store/store";
-import { useEffect } from "react";
 
 const Header = () => {
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { route } from '../../store/store';
 import { useLocation } from 'react-router-dom';
 
